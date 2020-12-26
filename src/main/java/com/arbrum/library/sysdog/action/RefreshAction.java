@@ -7,8 +7,6 @@ public final class RefreshAction extends AbstractAction
 	{
 		long datetime = System.currentTimeMillis() / 1000;
 		
-		this.nativeAction.refresh(token, datetime);
-		
-		return 0;
+		return this.hoster.refresh(token, datetime);
 	}
 }

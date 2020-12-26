@@ -15,6 +15,8 @@ public class Settings
 		public String user = null;
 		public String pass = null;
 	}
+
+	public static final String LIB_NATIVE_HARDWARE = "libhardw.so";
 	
 	private static final Object object = new Object();
 

@@ -31,8 +31,6 @@ public final class InitializeAction extends AbstractAction
 			return 0;
 		}
 		
-		this.nativeAction.initialize(token, type, host, port, user, pass);
-		
-		return 0;
+		return this.hoster.initialize(token, type, host, port, user, pass);
 	}
 }

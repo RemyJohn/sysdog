@@ -2,7 +2,7 @@ package com.arbrum.library.sysdog.action;
 
 import com.arbrum.library.sysdog.global.Settings;
 
-public final class UpdateAction extends AbstractAction
+public final class UpgradeAction extends AbstractAction
 {
 	@Override
 	public Object performAction(byte[] token)
