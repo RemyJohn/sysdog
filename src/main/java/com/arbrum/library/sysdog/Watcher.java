@@ -59,8 +59,19 @@ public class Watcher
 	/**
 	 * Execute actions.
 	 * 
+	 * @param action
+	 * @return
+	 */
+	public Object executeAction(Action action)
+	{
+		return action.performAction(null);
+	}
+
+	/**
+	 * Execute actions.
+	 * 
 	 * @param token
-	 * @param instance
+	 * @param action
 	 * @return
 	 */
 	public Object executeAction(byte[] token, Action action)
@@ -73,7 +84,7 @@ public class Watcher
 	 * 
 	 * @param externalKey
 	 * @param charset
-	 * @param instance
+	 * @param action
 	 * @return
 	 */
 	public Object executeAction(String externalKey, Charset charset, Action action)
